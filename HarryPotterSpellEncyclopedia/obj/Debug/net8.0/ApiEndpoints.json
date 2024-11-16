@@ -1,0 +1,111 @@
+[
+  {
+    "ContainingType": "HarryPotterSpellEncyclopedia.Controllers.SpellsController",
+    "Method": "GetSpells",
+    "RelativePath": "api/Spells",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HarryPotterSpellEncyclopedia.Models.Spells, HarryPotterSpellEncyclopedia, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HarryPotterSpellEncyclopedia.Controllers.SpellsController",
+    "Method": "PostSpell",
+    "RelativePath": "api/Spells",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "spell",
+        "Type": "HarryPotterSpellEncyclopedia.Models.Spells",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HarryPotterSpellEncyclopedia.Models.Spells",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HarryPotterSpellEncyclopedia.Controllers.SpellsController",
+    "Method": "GetSpell",
+    "RelativePath": "api/Spells/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HarryPotterSpellEncyclopedia.Models.Spells",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HarryPotterSpellEncyclopedia.Controllers.SpellsController",
+    "Method": "PutSpell",
+    "RelativePath": "api/Spells/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "spell",
+        "Type": "HarryPotterSpellEncyclopedia.Models.Spells",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HarryPotterSpellEncyclopedia.Controllers.SpellsController",
+    "Method": "DeleteSpell",
+    "RelativePath": "api/Spells/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -7,11 +7,16 @@ namespace HarryPotterSpellEncyclopedia.Database
     {
         public SpellDbContext(DbContextOptions<SpellDbContext> options) : base(options) { }
 
-        public DbSet<Spell> Spells { get; set; } 
-
+        public DbSet<Spells> Spells { get; set; } 
+                        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Spells>().HasData(
+                new Spells { Id = 1, Name = "Expelliarmus", Description = "Disarming Charm", Type = "Charm" },
+                new Spells { Id = 2, Name = "Lumos", Description = "Light Producing Charm", Type = "Charm" }
+            );
         }
+
     }
 }

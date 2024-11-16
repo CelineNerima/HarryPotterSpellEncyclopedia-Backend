@@ -21,7 +21,7 @@ namespace HarryPotterSpellEncyclopedia.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("HarryPotterSpellEncyclopedia.Models.Spell", b =>
+            modelBuilder.Entity("HarryPotterSpellEncyclopedia.Models.Spells", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -44,6 +44,22 @@ namespace HarryPotterSpellEncyclopedia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Spells");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Disarming Charm",
+                            Name = "Expelliarmus",
+                            Type = "Charm"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Light Producing Charm",
+                            Name = "Lumos",
+                            Type = "Charm"
+                        });
                 });
 #pragma warning restore 612, 618
         }

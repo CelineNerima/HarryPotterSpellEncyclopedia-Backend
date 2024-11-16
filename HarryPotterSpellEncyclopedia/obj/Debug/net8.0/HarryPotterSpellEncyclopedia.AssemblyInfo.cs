@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HarryPotterSpellEncyclopedia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e930755317600e60b7eea8d4ba13d76f107e2611")]
 [assembly: System.Reflection.AssemblyProductAttribute("HarryPotterSpellEncyclopedia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HarryPotterSpellEncyclopedia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
